@@ -1,0 +1,43 @@
+.about-section .aboutText {
+  font-size: 4.5rem;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.about-section .aboutText::before {
+  content: " ";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background: linear-gradient(135deg, #000000, #434343);
+  transition: all 0.3s ease-in-out;
+}
+
+.about-section .aboutText:hover::before {
+    width: 50%;
+}
+
+.about-section .lead {
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .about-section .aboutText {
+      font-size: 38px;
+  }
+
+  .about-section .aboutText::before {
+    bottom: 2px;
+  }
+
+  .about-section .aboutText:hover::before {
+    width: 30%;
+  }
+
+  .about-section .lead {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,67 @@
+.hero-section {
+  background: linear-gradient(135deg, #000000, #434343);
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .lead {
+  font-size: 1.75rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.ImageHero {
+  background-image: url("../assets/Images/me.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section .lead {
+    font-size: 1.25rem;
+  }
+
+  .hero-section .btn-cv {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .ImageHero {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+
+  .hero-section .lead {
+    font-size: 1.5rem;
+  }
+
+  .ImageHero {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+  }
+}

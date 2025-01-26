@@ -1,0 +1,71 @@
+.skills h2 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.skills p {
+  color: #e4e4e4;
+  font-size: 16px;
+  margin-bottom: 40px;
+  width: 70%;
+}
+
+.skills .container h4 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.skills .container h4::before {
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(135deg, #ffffff, #456478);
+    transition: all 0.3s ease-in-out;
+}
+
+.skills .container h4:hover::before{
+    width: 45%;
+}
+
+.skills .container ul li {
+    color: #e4e4e4;
+    padding: 5px 0px;
+}
+
+.MyAllSkills span {
+    color: #fff;
+}
+
+.progress {
+  height: 15px;
+  background-color: #555;
+}
+
+.progress-bar {
+  background-color: #6c757d;
+}
+
+.html {
+  background-color: #ff5733;
+}
+.css {
+  background-color: #1e90ff;
+}
+.js {
+  background-color: #f7df1e;
+}
+.react {
+  background-color: #61dafb;
+}
+.nodejs {
+  background-color: #3c873a;
+}
+.vuejs {
+  background-color: #42b883;
+}

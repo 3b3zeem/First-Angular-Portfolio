@@ -1,0 +1,45 @@
+.portfolio {
+  padding: 60px 0;
+}
+
+.portfolio h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.portfolio h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background: linear-gradient(135deg, #000000, #434343);
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio h2:hover::before {
+  width: 15%;
+}
+
+.portfolio-card {
+  background-color: #6c757d;
+  padding: 90px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: scale(1.05);
+  background-color: #343a40;
+}
+
+@media (max-width: 768px) {
+  .portfolio h2 {
+    font-size: 28px;
+  }
+  .portfolio-card {
+    padding: 30px;
+  }
+}
